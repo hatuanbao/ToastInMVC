@@ -10,6 +10,14 @@ namespace ToastInMVC.Controllers
     {
         public ActionResult Index()
         {
+            TempData["success"] = "Welcome back!";
+
+            TempData["info"] = "Info message";
+
+            TempData["warning"] = "Warning message";
+
+            TempData["error"] = "Error message";
+
             return View();
         }
 
